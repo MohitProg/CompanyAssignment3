@@ -2,8 +2,8 @@ import { v2 } from "cloudinary";
 
 v2.config({
   cloud_name: "dmd35imtv",
-  api_key: "424113654613344",
-  api_secret: "QNgrda51__CmmPxvCX-315R7cU0",
+  api_key:process.env.API_KEY,
+  api_secret: process.env.API_SECRET,
 });
 
 export const UploadHtmlFileOnClodinary = async (filepath) => {
